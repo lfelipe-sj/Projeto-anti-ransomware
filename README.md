@@ -5,7 +5,7 @@ Projeto desenvolvido para solucionar um desafio da empresa Pride Security: detec
 ## Sumário
 * [Descrição](#Descrição)
 * [Tecnologias](#Tecnologias)
-* [Back-end e Funcionamento](#Back-end)
+* [Back-end](#Back-end)
 
 ## Descrição
 
@@ -13,9 +13,9 @@ Esse projeto consiste em um programa que cria um backup que permite ao usuário 
 \
 O próximo programa foi desenvolvido com a inteção de detectar ações de ransomwares a partir de armadilha que chamamos de honeypot. Com ele é possível identificar as alterações de arquivos em que o usuário não deveria alterar, mas um ransomware com foco em criptograr todos os arquivos acaba caindo nas "traps" e alertando a ferramenta. A partir disso, a ferramenta analisa um arquivo chamado LISTA que armazena todos os novos PIDs executados do sistema windows - esse arquivo é gerado pelo programa "get-pid.exe" que é responsável por monitorar os novos PIDs gerados. Usando uma relação, se torna possivel identificar os PIDs responsáveis pelas modificações dos arquivos honeyfile do sistema, permitindo encerrar as ações do ransomware antes que prejudique mais o ambiente. \
 \
-Para instalar nossas ferramentas, acesse https://github.com/RansomWshielD/RWS-Challenge/tree/main/RWS-setup e leia o arquivo LEIA-ME.txt. Após isso instale os programas contidos na pasta Honeypot e Backup do link https://github.com/RansomWshielD/RWS-Challenge/tree/main/RWS-setup .\
+Para instalar nossas ferramentas, acesse https://github.com/lfelipe-sj/Projeto-anti-ransomware/tree/main/Setup e leia o arquivo LEIA-ME.txt. Após isso instale os programas contidos na pasta Honeypot e Backup do link https://github.com/lfelipe-sj/Projeto-anti-ransomware/tree/main/Setup .\
 \
-Caso queria consultar nosso código fonte acesse as pastas Honeypot e Backup do link https://github.com/RansomWshielD/RWS-Challenge/. E para saber mais consulte o tópico Back-end e Funcionamento.
+Caso queria consultar nosso código fonte acesse as outras pastas: Honeypot e Backup. E para saber mais consulte o tópico Back-end.
 
 ## Tecnologias
 * Pyhton
