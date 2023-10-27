@@ -1,0 +1,49 @@
+----------------Olá, Seja Bem Vindo aos Produtos da RansomWShield----------------
+Esse arquivo descreve como Instalar a Aplicação e como Executar o Programa.
+
+Índice:
+-Como Intalar as Ferramentas RWS 	..........1
+	-Python				..........2
+	-RWS-setup			..........3
+
+-Como Usar as Ferramentas RWS ....................4
+	-bckpRWS.exe			..........5
+	-seguranca-Backup.exe		..........6
+	-dTrap.exe (& get-pid.exe)	..........7
+	-Desinstalar os programas	..........8
+-Contribuição				..........9
+
+----------------Como Intalar as Ferramentas RWS----------------
+Python
+
+Primeiro instale o Python no site https://www.python.org/downloads/
+
+RWS-setup
+
+Acesse o github da empresa (https://github.com/RansomWshielD/RWS-Challenge). Leia o Readme.md do nosso github para saber o que cada ferramenta faz. Nele informa que para realizar a instalação é necessário fazer download dos arquivo da pasta RWS-setup - essa pasta contém o arquivo *LEIA-ME.txt e outras duas pastas chamadas *Backup (que contém o arquivo *setupBackup) e *Honeypot (que contém o arquivo *setupHoneypot). Após fazer o download, navegue até o diretório e abra a pasta:
+
+	-Leia o arquivo *LEIA-ME.txt ou se já estiver nele termine de ler;
+
+	-Execute primeiro o executável *setupHoneypot como Administrador: o executável irá instalar os arquivos no diretório C:\Program Files (x86)\RWS;
+
+	-Agora execute o executável *setupBackup como Administrador:  executável irá instalar os arquivos no diretório C:\Program Files (x86)\RWS\Backup.
+
+----------------Como Usar as Ferramentas RWS----------------
+bckpRWS.exe
+
+Navegue até o local onde foi instalado o bckpRWS.exe (C:\Program Files (x86)\RWS\Backup) e execute-o como Administrador. O programa bckpRWS.exe pergunta para o usuário qual diretório o usuário deseja realizar backup e armazena uma cópia no diretório C:\Backups. Caso o usuário desejar criar outro backup é possível realizar e a nova cópia será salva com a data do AAAAMMDDHHMMSS (ano,mês,dia,hora,minutos,segundos). Caso o usuário desejar restaurar os arquivos, é necessário executar novamente o programa, passar o diretório para qual ele deseja que retorno e seguir as etapas seguintes para confirmar a restauração.
+
+seguranca-Backup.exe
+
+Navegue até o local onde foi instalado o seguranca-Backup.exe (C:\Program Files (x86)\RWS\Backup) e execute-o como Administrador. O programa seguranca-Backup.exe pergunta ao usuário onde está o diretório "backup" do usuário (na qual esperamos uma resposta que seja o C:\Backups que é o diretório que o programa bckpRWS.exe cria para guardar as cópias do usuário). Esse programa tem um menu de 4 opções que consiste em: ocultar os arquivos do backup do usuário (que é a uma da "proteções" para que o ransomware não liste os arquivos), desocultar os arquivos (para que seja possivel ser listado quando quiser restaura-los com o programa bckpRWS.exe), remover a permissão de escrita (para que o ransomware não escreva nos arquivos do backup) e restaurar a permissão de escrita e execução (para que o programa bckpRWS.exe possa restaurar os arquivos e que o usuário possa altera-los se desejar)
+
+dTrap.exe (& get-pid.exe)
+
+Navegue até o local onde foi instalado o dTrap.exe (C:\Program Files (x86)\RWS) e execute-o como Administrador. O programa dTrap.exe cria os arquivos *bbdilha e *yydilha nos diretórios *Documents, *Downloads e *Desktop do usuário. Após isso ele executa o programa get-pid.exe que precisa estar na mesma pasta que o dTrap.exe. O programa get-pid.exe executa e monitora todos os novos PIDs executados no sistema e cria um arquivo chamado *LISTA para armazenar os PIDs. O programa dTrap.exe tem uma relação com o arquivo *LISTA que ao monitorar uma atitude maliciona com os arquivos "honeypot" (bbdilha e yydilha) encerra o processo malicioso usando como base o(s) PID(s) do arquivo LISTA. Dessa forma caso o ransomware tente criptografar a pasta Documents, Downloads e Desktop, temos a intenção de capturar sua ação e encerra seu processo assim que os arquivos honeypots forem alterados de forma indevida. Caso o programa dTrap.exe seja encerrado, o programa get-pid.exe também é encerrado automaticamente, e quando forem iniciados novamente o arquivo LISTA é sobreescrito armazenando os PIDs novos.
+
+Desinstalar os programas
+
+Para desinstalar os programas bckpRWS.exe e seguranca-Backup.exe, navegue até a pasta "C:\Program Files (x86)\RWS\Backup" e execute o arquivo *unins000.exe. E para desistalar os programas dTrap.exe e get-pid.exe, navegue até a pasta "C:\Program Files (x86)\RWS" e execute o arquivo *unins000.exe.
+
+----------------Contribuição----------------
+Caso queria contribuir no desenvolvimento desse projeto, entre em contato conosco pelo nosso site https://ransomwshield.azurewebsites.net/ ou pelo email ransomwshield@gmail.com
