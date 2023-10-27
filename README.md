@@ -1,7 +1,6 @@
-# RWS #
+# Modelo-inicial-Anti-Ransomware #
 
-Esse Projeto consiste no desenvolvimento de uma Solução Anti-Ransomware. Desenvolvido pela Equipe RansomWShield\
-Fique a vontade para ajudar na evolução dos programas para a proteção de sistemas Windows
+Projeto desenvolvido para solucionar um desafio da empresa Pride Security: detectar e mitigar ações de ransomwares. Contém uma solução de backup, proteção dos arquivos do backup, proteção e monitoramento dos arquivos do usuário para identificar as ações maliciosas de um ransomware.
 
 ## Sumário
 * [Descrição](#Descrição)
