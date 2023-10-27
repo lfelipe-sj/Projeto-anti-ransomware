@@ -4,24 +4,20 @@ Esse arquivo descreve como Instalar a Aplicação e como Executar o Programa.
 Índice:
 -Como Intalar as Ferramentas RWS 	..........1
 	-Python				..........2
-	-RWS-setup			..........3
+	-Programas contidos no Setup	..........3
 
 -Como Usar as Ferramentas RWS ....................4
 	-bckpRWS.exe			..........5
 	-seguranca-Backup.exe		..........6
 	-dTrap.exe (& get-pid.exe)	..........7
 	-Desinstalar os programas	..........8
--Contribuição				..........9
 
 ----------------Como Intalar as Ferramentas RWS----------------
 Python
 
 Primeiro instale o Python no site https://www.python.org/downloads/
 
-RWS-setup
-
-Acesse o github da empresa (https://github.com/RansomWshielD/RWS-Challenge). Leia o Readme.md do nosso github para saber o que cada ferramenta faz. Nele informa que para realizar a instalação é necessário fazer download dos arquivo da pasta RWS-setup - essa pasta contém o arquivo *LEIA-ME.txt e outras duas pastas chamadas *Backup (que contém o arquivo *setupBackup) e *Honeypot (que contém o arquivo *setupHoneypot). Após fazer o download, navegue até o diretório e abra a pasta:
-
+Na pasta Setup
 	-Leia o arquivo *LEIA-ME.txt ou se já estiver nele termine de ler;
 
 	-Execute primeiro o executável *setupHoneypot como Administrador: o executável irá instalar os arquivos no diretório C:\Program Files (x86)\RWS;
@@ -44,6 +40,3 @@ Navegue até o local onde foi instalado o dTrap.exe (C:\Program Files (x86)\RWS)
 Desinstalar os programas
 
 Para desinstalar os programas bckpRWS.exe e seguranca-Backup.exe, navegue até a pasta "C:\Program Files (x86)\RWS\Backup" e execute o arquivo *unins000.exe. E para desistalar os programas dTrap.exe e get-pid.exe, navegue até a pasta "C:\Program Files (x86)\RWS" e execute o arquivo *unins000.exe.
-
-----------------Contribuição----------------
-Caso queria contribuir no desenvolvimento desse projeto, entre em contato conosco pelo nosso site https://ransomwshield.azurewebsites.net/ ou pelo email ransomwshield@gmail.com
